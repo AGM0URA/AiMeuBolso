@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const Cor = {
     Cores: {
       Branco: '#FFFFFF',
-      VerdeEscuro: '#64c27b',
+      VerdeEscuro: '#64C27B',
       VerdeClarinho: '#D0FDD7', 
       VerdeMedio: '#9BFAB0',
       text: '#333333',
@@ -22,7 +22,7 @@ export const ConfigResponsivo = createGlobalStyle`
     height: 100vh;
     width: 100vw;
     overflow: hidden; 
-    background-color: ${Cor.Branco};
+    background-color: ${Cor.Cores.Branco};
     font-family: 'Arial', sans-serif;
   }
 

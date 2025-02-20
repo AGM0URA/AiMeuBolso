@@ -13,7 +13,7 @@ import
     
  } from "../Styles/Menu.js";
 import { ConfigResponsivo } from "../Styles/ConfigGlobal.js";
-
+import Rodape from "../Components/Rodape.jsx";
 
 const MenuPage = () => {
     return (
@@ -32,7 +32,9 @@ const MenuPage = () => {
                     <TituloDosBotoes>Nova saída</TituloDosBotoes>
                 </BotaoSaida>
             </ContainerEntradaESaida>
+            <Rodape/>
         </MenuContainer>
+        
         </>
     );
 };
