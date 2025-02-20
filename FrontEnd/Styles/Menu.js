@@ -152,4 +152,38 @@ export const BotaoSaida = styled.button`
 `;
 
 
+export const Historico = styled.button`
+display:flex;
+background-color: ${Cor.Cores.VerdeEscuro};
+width:355px;
+height:150px;
+margin-left: 11px;
+margin-top: 50px;
+border: none;
+border-radius:21px ;
+display: flex;
+justify-content: space-between;
+
+@media (min-width: 768px) {
+    font-size: 2.5rem;
+}
+`;
+
+
+export const TituloHistorico = styled.h1`
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size:30px ;
+    font-weight: 900; 
+    font-style: normal; 
+    color:${Cor.Cores.Branco};
+   
+
+
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+`;
+
 

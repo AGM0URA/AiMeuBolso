@@ -9,7 +9,9 @@ import
     ContainerEntradaESaida,
     BotaoEntrada,
     BotaoSaida,
-    TituloDosBotoes
+    TituloDosBotoes,
+    Historico,
+    TituloHistorico
     
  } from "../Styles/Menu.js";
 import { ConfigResponsivo } from "../Styles/ConfigGlobal.js";
@@ -32,6 +34,9 @@ const MenuPage = () => {
                     <TituloDosBotoes>Nova saída</TituloDosBotoes>
                 </BotaoSaida>
             </ContainerEntradaESaida>
+            <Historico>
+                <TituloHistorico>Veja Aqui o Historico</TituloHistorico>
+            </Historico>
         </MenuContainer>
         </>
     );
