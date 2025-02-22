@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuPage from "../Pages/Menu";
 import PaginaNovaEntrada from "../Pages/NovaEntrada";
+import PaginaNovaSaida from "../Pages/NovaSaida";
 import { Cor } from "../Styles/ConfigGlobal";
 
 const AppContainer = styled.div`
@@ -22,6 +23,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<MenuPage />} />
                     <Route path="/NovaEntrada" element={<PaginaNovaEntrada/>} />
+                    <Route path="/NovaSaida"element={<PaginaNovaSaida/>}/>
                 </Routes>
             </AppContainer>
         </BrowserRouter>

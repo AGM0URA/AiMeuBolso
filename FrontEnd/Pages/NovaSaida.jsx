@@ -11,13 +11,15 @@ import {
     BotaoSalvar
 } from "../Styles/ComponentesEntradaESaida.js";
 
-const PaginaNovaEntrada = () => {
+
+
+const PaginaNovaSaida = () =>{
     const Navegar = useNavigate();
     return (
        <NovaEntradaESaidaContainer>
         {/*Seta temporaria, aprender a botar icon ainda*/}
         <SetaVoltar onClick={() => Navegar("/")}>⬅️</SetaVoltar>
-        <TituloH1>Registre aqui a entrada</TituloH1>
+        <TituloH1>Registre aqui a Saida</TituloH1>
         
         <InputContainer>
         <TituloInput>Valor</TituloInput>
@@ -33,4 +35,4 @@ const PaginaNovaEntrada = () => {
     );
 };
 
-export default PaginaNovaEntrada;
+export default PaginaNovaSaida

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Cor } from "./ConfigGlobal";
 
-export const NovaEntradaContainer = styled.div`
+export const NovaEntradaESaidaContainer = styled.div`
     background-color: ${Cor.Cores.Branco};
     width: 100%;
     height: 100%;
