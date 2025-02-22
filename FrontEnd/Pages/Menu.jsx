@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import 
 { 
     MenuContainer,
@@ -18,6 +19,7 @@ import { ConfigResponsivo } from "../Styles/ConfigGlobal.js";
 
 
 const MenuPage = () => {
+    const Navegar = useNavigate();
     return (
         <>
         <MenuContainer>
@@ -27,7 +29,7 @@ const MenuPage = () => {
                 <ValorSaldoEmConta>R$1000</ValorSaldoEmConta>
             </ContainerSaldoEmConta>
             <ContainerEntradaESaida>
-                <BotaoEntrada>
+                <BotaoEntrada onClick={() => Navegar("/NovaEntrada")}>
                     <TituloDosBotoes>Nova entrada</TituloDosBotoes>
                 </BotaoEntrada>
                 <BotaoSaida>

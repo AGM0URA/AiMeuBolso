@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import {
     NovaEntradaContainer,
     TituloH1,
@@ -6,13 +7,16 @@ import {
     SetaVoltar,
     InputContainer,
     Input,
-    Textarea
+    Textarea,
+    BotaoSalvar
 } from "../Styles/NovaEntrada";
 
 const PaginaNovaEntrada = () => {
+    const Navegar = useNavigate();
     return (
        <NovaEntradaContainer>
-        <SetaVoltar>⬅️</SetaVoltar>
+        {/*Seta temporaria, aprender a botar icon ainda*/}
+        <SetaVoltar onClick={() => Navegar("/")}>⬅️</SetaVoltar>
         <TituloH1>Registre aqui a entrada</TituloH1>
         
         <InputContainer>
@@ -22,7 +26,7 @@ const PaginaNovaEntrada = () => {
         <Input type="date" ></Input>
         <TituloInput >Descrição</TituloInput>
         <Textarea type="text"></Textarea>
-
+        <BotaoSalvar>Salvar</BotaoSalvar>
 
         </InputContainer>
        </NovaEntradaContainer>

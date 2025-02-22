@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuPage from "../Pages/Menu";
+import PaginaNovaEntrada from "../Pages/NovaEntrada";
 import { Cor } from "../Styles/ConfigGlobal";
 
 const AppContainer = styled.div`
@@ -20,6 +21,7 @@ const App = () => {
             <AppContainer>
                 <Routes>
                     <Route path="/" element={<MenuPage />} />
+                    <Route path="/NovaEntrada" element={<PaginaNovaEntrada/>} />
                 </Routes>
             </AppContainer>
         </BrowserRouter>
