@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Cor } from "./ConfigGlobal";
+import { GoArrowLeft } from "react-icons/go";
 
 export const NovaEntradaESaidaContainer = styled.div`
     background-color: ${Cor.Cores.Branco};
@@ -17,10 +18,11 @@ export const SetaVoltar = styled.div`
     background-color: ${Cor.Cores.Branco};
     width: 20px;
     height: 20px;
-    display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-left: 15px;
+    margin-bottom:20px;
+ 
 
     @media (min-width: 768px) {
         font-size: 2.5rem;
@@ -35,8 +37,8 @@ export const TituloH1 = styled.h1`
     font-weight: 900; 
     font-style: normal; 
     color:${Cor.Cores.VerdeEscuro};
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
+    align-self:center;
 
 
     @media (min-width: 768px) {

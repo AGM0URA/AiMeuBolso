@@ -18,6 +18,7 @@ import
 import { ConfigResponsivo } from "../Styles/ConfigGlobal.js";
 
 
+
 const MenuPage = () => {
     const Navegar = useNavigate();
     return (
