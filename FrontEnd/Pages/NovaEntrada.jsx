@@ -17,7 +17,6 @@ const PaginaNovaEntrada = () => {
     const Navegar = useNavigate();
     return (
        <NovaEntradaESaidaContainer>
-        {/*Seta temporaria, aprender a botar icon ainda*/}
          <SetaVoltar onClick={() => Navegar("/")}><GoArrowLeft size={50} color={Cor.Cores.VerdeEscuro}></GoArrowLeft></SetaVoltar>
         <TituloH1>Registre aqui a entrada</TituloH1>
         

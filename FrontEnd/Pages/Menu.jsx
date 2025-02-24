@@ -37,7 +37,7 @@ const MenuPage = () => {
                     <TituloDosBotoes onClick={()=> Navegar("/NovaSaida")}>Nova saída</TituloDosBotoes>
                 </BotaoSaida>
             </ContainerEntradaESaida>
-            <Historico>
+            <Historico onClick={()=> Navegar("/Historico")}>
                 <TituloHistorico>Veja Aqui o Historico</TituloHistorico>
             </Historico>
         </MenuContainer>

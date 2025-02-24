@@ -121,6 +121,7 @@ export const BotaoSalvar = styled.button`
     color:${Cor.Cores.Branco};
     width:340px;
     height:50px;
+    margin-top:30px;
     margin-left: 18px;
     border-radius:50px ;
     display: flex;
