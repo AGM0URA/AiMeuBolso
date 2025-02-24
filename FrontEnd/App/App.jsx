@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuPage from "../Pages/Menu";
 import PaginaNovaEntrada from "../Pages/NovaEntrada";
 import PaginaNovaSaida from "../Pages/NovaSaida";
+import HistoricoPage from "../Pages/Historico";
 import { Cor } from "../Styles/ConfigGlobal";
 
 const AppContainer = styled.div`
@@ -24,6 +25,7 @@ const App = () => {
                     <Route path="/" element={<MenuPage />} />
                     <Route path="/NovaEntrada" element={<PaginaNovaEntrada/>} />
                     <Route path="/NovaSaida"element={<PaginaNovaSaida/>}/>
+                    <Route path="/Historico"element={<HistoricoPage/>}/>
                 </Routes>
             </AppContainer>
         </BrowserRouter>
